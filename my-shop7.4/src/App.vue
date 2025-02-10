@@ -1,20 +1,19 @@
-<template>
-	<div id="app">
-	<ProductCard
-name="Українська вишиванка"
-description="Стильна вишиванка з традиційними орнаментами."
-price="1500"
-image="https://upload.wikimedia.org/wikipedia/commons/7/75/Folklore_of_Sanok%2C_2010_1.JPG"
-	/>
-	</div>
-	</template>
 
-	<script>
-import ProductCard from './components/ProductCard.vue';
+<template>
+  <div id="app">
+    <ProductList />
+    <FooterComponent />
+  </div>
+</template>
+
+<script>
+import ProductList from './components/ProductList.vue';
+import FooterComponent from './components/FooterComponent.vue';
 
 export default {
-	components: {
-		ProductCard
-	}
+  components: {
+    ProductList,
+    FooterComponent,
+  },
 };
-	</script>
+</script>
